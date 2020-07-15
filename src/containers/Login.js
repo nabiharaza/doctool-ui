@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from '../logo.svg';
-import '../App.css';
+import '../login.css';
+import '../assets/images/aruba-logo.png'
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap'
 
-function App() {
+
+function Login() {
     return (
         <Form className="login-form">
+            {/* eslint-disable-next-line react/jsx-no-undef */}
             <h1><span className="font-weight-bold">HTS  </span>Login Page</h1>
             <h2 className='text-center'>Welcome</h2>
             <FormGroup>
-                <label>Email</label>
+                <label>Email </label>
                 <Input type="email" placeholder='Email'/>
             </FormGroup>
             <FormGroup>
@@ -26,4 +28,4 @@ function App() {
     );
 }
 
-export default App;
+export default Login;

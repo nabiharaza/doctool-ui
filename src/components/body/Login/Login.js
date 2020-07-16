@@ -2,12 +2,12 @@ import React from 'react';
 import './login.css';
 import '../../../assets/images/aruba-logo.png'
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap'
-
+import Jumbotron from '../../../assets/images/aruba-logo.png'
 
 function Login() {
     return (
         <Form className="login-form">
-            {/* eslint-disable-next-line react/jsx-no-undef */}
+            <img style={{height:'auto',width:'100%'}} src={ Jumbotron }/>
             <h1><span className="font-weight-bold">HTS  </span>Login Page</h1>
             <h2 className='text-center'>Welcome</h2>
             <FormGroup>

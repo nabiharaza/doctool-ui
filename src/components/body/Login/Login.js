@@ -1,6 +1,6 @@
 import React from 'react';
-import '../login.css';
-import '../assets/images/aruba-logo.png'
+import './login.css';
+import '../../../assets/images/aruba-logo.png'
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap'
 
 
@@ -18,7 +18,7 @@ function Login() {
                 <label>Password</label>
                 <Input type="password" placeholder='Password'/>
             </FormGroup>
-            <Button className='btn-lg btn-dark btn-block'>Login</Button>
+            <Button className='btn-lg btn-block'>Login</Button>
             <div className="text-center">
                 <a href="/forgot-password">Forgot Password</a>
                 <span className='p-2'>|</span>

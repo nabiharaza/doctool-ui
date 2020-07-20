@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './login.css';
+import './components/body/Login/login.css';
 
 function Login() {
   return (

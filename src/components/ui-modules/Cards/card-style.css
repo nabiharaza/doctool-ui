@@ -3,7 +3,10 @@ body{
 }
 
 .card{
-    width: 20rem;
+    width: 19rem;
+    height:19rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .card:hover{
     box-shadow: 5px 10px 10px 1px rgba(0, 0, 0,0.253);

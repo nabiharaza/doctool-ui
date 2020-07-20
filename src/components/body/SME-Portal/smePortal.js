@@ -1,12 +1,13 @@
 import React from 'react';
-import '../Login/login.css';
+import '../RoutesApp/routes_app.css';
 
 function SMEPortal() {
-  return (
-    <div className="App">
-      <h1>SME Portal</h1>
-    </div>
-  );
+    return (
+        <div>
+            <h1>SME Portal</h1>
+        </div>
+    );
+
 }
 
 export default SMEPortal;

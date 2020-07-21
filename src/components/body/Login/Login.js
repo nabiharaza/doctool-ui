@@ -7,7 +7,7 @@ import {Button, Form, FormGroup, Input} from 'reactstrap'
 function Login() {
     return (
         <Form className="login-form">
-            <img style={{height: 'auto', width: '100%'}} src={aruba_logo}/>
+            {/*<img src={aruba_logo} alt='aruba-logo'/>*/}
             <h1><span className="font-weight-bold">HTS  </span>Login Page</h1>
             <h2 className='text-center'>Welcome</h2>
             <FormGroup>

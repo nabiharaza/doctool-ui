@@ -1,7 +1,7 @@
 import React from 'react'
-import './card-style.css';
+import './HorizontalCard.css';
 
-const Card = props => {
+const HorizontalCard = props => {
     return (
         <div className='card text-center'>
             <div className='overflow'>
@@ -10,11 +10,11 @@ const Card = props => {
             <div className='card-body text-dark'>
                 <h4 className='card-title'>{props.title}</h4>
                 <p className='card-text text-secondary'>{props.textContent}</p>
-                <a href='#' className='btn btn-dark btn-sm'>Click Here</a>
+                <a href={props.route} className='btn btn-outline-primary btn-sm'>{props.button}</a>
 
             </div>
         </div>
     );
 };
 
-export default Card;
+export default HorizontalCard;

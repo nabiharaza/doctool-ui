@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import PageTitle from "../../../modules/PageTitle/PageTitle";
-import HorizontalCard from "../../../modules/HorizontalCard/HorizontalCard";
 
 
 class TestDocumentForm extends Component {

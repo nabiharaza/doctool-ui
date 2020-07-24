@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../../RoutesApp/RoutesApp.css';
+import '../../../RoutesApp/RoutesApp.module.css';
 import aruba from '../../../../../assets/aruba_logo.png';
 import HorizontalCard from '../../../../modules/HorizontalCard/HorizontalCard'
 import PageTitle from "../../../../modules/PageTitle/PageTitle";

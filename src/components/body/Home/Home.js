@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../RoutesApp/RoutesApp.css'
+import '../RoutesApp/RoutesApp.module.css'
 import file from '../../../assets/file.png';
 import aruba from '../../../assets/aruba_logo.png';
 import sme from '../../../assets/sme_portal.png';
@@ -26,7 +26,7 @@ class Home extends Component {
 
                                 <hr/>
                                 <VerticalCard imgsrc={orange} title='Scheduling' toplink='Calendar and Skills' route_toplink = '/'
-                                                    bottomlink='Soft Requests' route_bottomlink='/'/>
+                                                    bottomlink='Incoming Soft Requests' route_bottomlink='/'/>
                                 <hr/>
                                 <VerticalCard imgsrc={orange} title='Dashboards' toplink='Revenue' route_toplink = '/'
                                                     bottomlink='Something' route_bottomlink='/'/>

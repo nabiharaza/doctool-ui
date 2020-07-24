@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import PageTitle from "../../../modules/PageTitle/PageTitle";
+import PageTitle from "../../../../modules/PageTitle/PageTitle";
 
 
-class TestDocumentForm extends Component {
+class CreateStepOne extends Component {
     render() {
         return (
             <div className='container'>
@@ -28,4 +28,4 @@ class TestDocumentForm extends Component {
     }
 }
 
-export default TestDocumentForm
+export default CreateStepOne

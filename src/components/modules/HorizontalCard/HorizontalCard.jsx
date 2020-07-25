@@ -1,5 +1,5 @@
 import React from 'react'
-import './HorizontalCard.css';
+import './HorizontalCard.module.css';
 
 const HorizontalCard = props => {
     return (

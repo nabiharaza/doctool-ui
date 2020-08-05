@@ -1,5 +1,5 @@
 import React from 'react';
-import './login.css';
+import './Login.module.css';
 import aruba_logo from '../../../assets/aruba_logo.png';
 import {Button, Form, FormGroup, Input} from 'reactstrap'
 

@@ -37,7 +37,6 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^5.2.0",
-    "webpack": "^4.42.0"
+    "react-router-dom": "^5.2.0"
   }
 }

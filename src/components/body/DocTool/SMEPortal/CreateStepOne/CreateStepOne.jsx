@@ -43,20 +43,33 @@ export default class CreateStepOne extends React.Component {
             let foldersList = Object.keys(items.response).map((k) => {
                 return (
                     <option key={k}
-                            value={JSON.stringify(items.response[k].folder_id)}>{JSON.stringify(items.response[k].folder_name)}</option>
+                            value={JSON.stringify(items.response[k].folder_id).slice(1, -1)}>{JSON.stringify(items.response[k].folder_name).slice(1, -1)}</option>
                 )
             }, this);
             return (
                 <div className='container'>
                     <PageTitle title={'Fill the details'}/>
-                    <div className='row'>
+                    <div className='row' id='select-folder-screen'>
                         <div className='col-md-4'>
                             <form>
-                                <select>
-                                    {foldersList}
-                                    
-                                </select>
-                                
+                                <div className="form-group">
+                                    <label htmlFor="selectBucket">Select Bucket for Test Plan</label>
+                                    <select class="form-control" id="selectBucket">
+                                        {foldersList}
+                                    </select>
+                                </div>
+                                <button type="submit" className="btn btn-primary">Next</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div className='row' id='enter-test-doc-screen'>
+                        <div className='col-md-4'>
+                            <form>
+                                <div className="form-group">
+                                    lol
+                                </div>
                                 <button type="submit" className="btn btn-primary">Next</button>
                             </form>
                         </div>

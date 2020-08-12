@@ -1,5 +1,6 @@
 import React from "react";
 import PageTitle from "../../../../modules/PageTitle/PageTitle";
+import {ThemeContext} from './Provider';
 
 export default class CreateStepOne extends React.Component {
     constructor(props) {
@@ -10,6 +11,8 @@ export default class CreateStepOne extends React.Component {
             items: []
         };
     }
+
+    static contextType = ThemeContext
 
     componentDidMount() {
         fetch("http://127.0.0.1:5000/api/v1/folders")
@@ -31,10 +34,14 @@ export default class CreateStepOne extends React.Component {
                     });
                 }
             )
+
+        const value = this.context;
+        console.log(value)
     }
 
     render() {
         const {error, isLoaded, items} = this.state;
+
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
@@ -47,34 +54,29 @@ export default class CreateStepOne extends React.Component {
                 )
             }, this);
             return (
-                <div className='container'>
-                    <PageTitle title={'Fill the details'}/>
-                    <div className='row' id='select-folder-screen'>
-                        <div className='col-md-4'>
-                            <form>
-                                <div className="form-group">
-                                    <label htmlFor="selectBucket">Select Bucket for Test Plan</label>
-                                    <select class="form-control" id="selectBucket">
-                                        {foldersList}
-                                    </select>
-                                </div>
-                                <button type="submit" className="btn btn-primary">Next</button>
-                            </form>
+
+
+                    <div className='container'>
+
+
+                        <PageTitle title={'Fill the details'}/>
+                        <div className='row' id='select-folder-screen'>
+                            <div className='col-md-4'>
+                                <form>
+                                    <div className="form-group">
+                                        <label htmlFor="selectBucket">Select Bucket for Test Plan</label>
+                                        <select className="form-control" id="selectBucket">
+                                            {foldersList}
+                                        </select>
+                                    </div>
+                                    <button type="submit" className="btn btn-primary">Next</button>
+                                </form>
+                            </div>
                         </div>
+
                     </div>
 
 
-                    <div className='row' id='enter-test-doc-screen'>
-                        <div className='col-md-4'>
-                            <form>
-                                <div className="form-group">
-                                    lol
-                                </div>
-                                <button type="submit" className="btn btn-primary">Next</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             );
         }
     }
